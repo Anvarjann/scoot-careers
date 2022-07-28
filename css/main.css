@@ -65,6 +65,7 @@ body {
    padding: 0;
    font-size: 15px;
    font-family: "Lexend Deca", "Arial", sans-serif;
+   overflow-x: hidden;
 }
 
 img {
@@ -79,7 +80,7 @@ h4,
 h5,
 h6 {
    margin: 0;
-   font-family: "Space Mono", "Courier New" monospace;
+   font-family: "Space Mono", "Courier New", monospace;
    
 }
 
@@ -96,7 +97,39 @@ ol {
 }
 
 a {
-   font-family: "Space Mono", "Courier New" monospace;
+   font-family: "Space Mono", "Courier New", monospace;
+}
+
+.link {
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 25px;
+   color: var(--dimgray);
+   text-decoration: none;
+   display: inline-block;
+   transition: all 0.2s ease;
+}
+
+.button {
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 25px;
+   text-align: center;
+   color: #FFFFFF;
+   background-color: var(--yellow);
+   padding: 14px 39px;
+   text-decoration: none;
+   transition: all 0.2s ease;
+}
+
+.button:hover {
+   color: var(--yellow);
+   background-color: #FFFFFF;
+   box-shadow: inset 0 0 0 3px var(--yellow);
+}
+
+.button:active {
+   opacity: 0.4;
 }
 
 /* CONTAINER */
@@ -133,8 +166,13 @@ a {
 /* HEADER START */
 
 .site-header {
-   margin-top: 22px;
-   margin-bottom: 21px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   width: 100%;
+   padding-top: 22px;
+   padding-bottom: 21px;
    background-color: #FFFFFF;
 }
 
@@ -147,10 +185,6 @@ a {
    margin-right: 58px;
 }
 
-.logo__img {
-   
-}
-
 .nav {
    margin-right: auto;
 }
@@ -160,22 +194,9 @@ a {
    align-items: center;
 }
 
-.nav__item {
-   
-}
-
 .nav__item:nth-child(2) {
    margin-right: 32px;
    margin-left: 32px;
-}
-
-.link {
-   font-weight: 700;
-   font-size: 15px;
-   line-height: 25px;
-   color: var(--dimgray);
-   text-decoration: none;
-   transition: all 0.2s ease;
 }
 
 .link:hover {
@@ -186,24 +207,108 @@ a {
    color: #fcb62bb6;
 }
 
-.site-header__end-link {
-   font-weight: 700;
+/* HERO START */
+
+.hero {
+   position: relative;
+   margin-top: 96px;
+   padding-top: 163px;
+   padding-bottom: 162px;
+   background-image: url("../images/hero-bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+   
+   .hero {
+      background-image: url("../images/hero-bg@2x.jpg");
+   }
+   
+}
+
+.hero__inner {
+
+}
+
+.hero__text-wrapper {
+   width: 500px;
+}
+
+.hero__heading {
+   font-size: 56px;
+   line-height: 56px;
+   letter-spacing: -2.5px;
+   color: #FFFFFF;
+   margin-bottom: 40px;
+}
+
+.hero__text {
+   position: relative;
    font-size: 15px;
    line-height: 25px;
-   text-align: center;
    color: #FFFFFF;
-   background-color: var(--yellow);
-   padding: 14px 39px;
-   text-decoration: none;
-   transition: all 0.2s ease;
+   margin-bottom: 40px;
+   margin-left: 95px;
 }
 
-.site-header__end-link:hover {
-   color: var(--yellow);
+.hero__text::before {
+   position: absolute;
+   top: calc(50% - 10px);
+   left: calc(50% - 505px);
+   width: 203px;
+   height: 15px;
+   background-image: url("../images/hero-line.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.hero__text::after {
+   position: absolute;
+   top: calc(50% - 10px);
+   right: calc(50% - 700px);
+   width: 452px;
+   height: 151px;
+   background-image: url("../images/hero-arrow.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.hero__link {
+   color: #FFFFFF;
+   margin-left: 95px;
+}
+
+.hero__link:hover {
+   background-color: transparent;
+}
+
+.hero__circle-wrapper {
+   position: absolute;
+   bottom: calc(50% - 170px);
+   right: calc(50% - 808px);
+}
+
+.hero__circle {
+   display: inline-block;
+   width: 62px;
+   height: 62px;
+   border-radius: 50%;
+   border: 3px solid #FFFFFF;
+}
+
+.hero__circle:last-child {
    background-color: #FFFFFF;
-   box-shadow: inset 0 0 0 3px var(--yellow);
 }
 
-.site-header__end-link:active {
-   opacity: 0.4;
+.hero__circle:not(:last-child) {
+   margin-right: 24px;
 }
