@@ -79,7 +79,8 @@ h4,
 h5,
 h6 {
    margin: 0;
-
+   font-family: "Space Mono", "Courier New" monospace;
+   
 }
 
 p {
@@ -92,6 +93,10 @@ ol {
    margin: 0;
    padding: 0;
    list-style-type: none;
+}
+
+a {
+   font-family: "Space Mono", "Courier New" monospace;
 }
 
 /* CONTAINER */
@@ -123,4 +128,82 @@ ol {
 
 .site-main {
    flex-grow: 1;
+}
+
+/* HEADER START */
+
+.site-header {
+   margin-top: 22px;
+   margin-bottom: 21px;
+   background-color: #FFFFFF;
+}
+
+.site-header__inner {
+   display: flex;
+   align-items: center;
+}
+
+.logo {
+   margin-right: 58px;
+}
+
+.logo__img {
+   
+}
+
+.nav {
+   margin-right: auto;
+}
+
+.nav__list {
+   display: flex;
+   align-items: center;
+}
+
+.nav__item {
+   
+}
+
+.nav__item:nth-child(2) {
+   margin-right: 32px;
+   margin-left: 32px;
+}
+
+.link {
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 25px;
+   color: var(--dimgray);
+   text-decoration: none;
+   transition: all 0.2s ease;
+}
+
+.link:hover {
+   color: var(--yellow);
+}
+
+.link:active {
+   color: #fcb62bb6;
+}
+
+.site-header__end-link {
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 25px;
+   text-align: center;
+   color: #FFFFFF;
+   background-color: var(--yellow);
+   padding: 14px 39px;
+   text-decoration: none;
+   transition: all 0.2s ease;
+}
+
+.site-header__end-link:hover {
+   color: var(--yellow);
+   background-color: #FFFFFF;
+   box-shadow: inset 0 0 0 3px var(--yellow);
+}
+
+.site-header__end-link:active {
+   opacity: 0.4;
 }
