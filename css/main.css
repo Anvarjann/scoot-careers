@@ -575,3 +575,34 @@ only screen and (                min-resolution: 2dppx) {
 .article__google-texts {
    margin-left: 12px;
 }
+
+/* FOOTER START */
+
+.site-footer {
+   padding-top: 35px;
+   padding-bottom: 32px;
+   background-color: #333A44;
+}
+
+.site-footer__inner {
+   display: flex;
+   align-items: center;
+}
+
+.site-footer__list {
+   display: flex;
+   align-items: center;
+}
+
+.site-footer__item:nth-child(2) {
+   margin-right: 24px;
+   margin-left: 24px;
+}
+
+.site-footer__link {
+   color: var(--yellow);
+}
+
+.site-footer__link:hover {
+   color: #FFFFFF;
+}
