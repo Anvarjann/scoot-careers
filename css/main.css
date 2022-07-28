@@ -234,10 +234,6 @@ only screen and (                min-resolution: 2dppx) {
    
 }
 
-.hero__inner {
-   
-}
-
 .hero__text-wrapper {
    width: 500px;
 }
@@ -322,10 +318,6 @@ only screen and (                min-resolution: 2dppx) {
    padding-bottom: 200px;
 }
 
-.location__inner {
-   
-}
-
 .location__line {
    position: absolute;
    top: calc(50% - 120px);
@@ -389,14 +381,6 @@ only screen and (                min-resolution: 2dppx) {
 
 .careers {
    padding-bottom: 200px;
-}
-
-.careers__inner {
-
-}
-
-.careers__list {
-
 }
 
 .careers__item {
@@ -503,14 +487,6 @@ only screen and (                min-resolution: 2dppx) {
    margin-bottom: 40px;
 }
 
-.button {
-
-}
-
-.careers__item-link {
-
-}
-
 .careers__item-img {
    position: relative;
    border-radius: 50%;
@@ -518,4 +494,84 @@ only screen and (                min-resolution: 2dppx) {
 
 .careers__item-img > img {
    border-radius: 50%;
+}
+
+/* ARTICLE START */
+
+.article {
+   position: relative;
+   padding-top: 102px;
+   padding-bottom: 102px;
+   background-color: var(--navy);
+   overflow: hidden;
+}
+
+.article::after {
+   position: absolute;
+   right: calc(50% - 890px);
+   bottom: calc(50% - 360px);
+   width: 1161px;
+   height: 363px;
+   background-image: url("../images/article-cercles.svg");
+   content: "";
+}
+
+.article__inner {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.article__title {
+   font-size: 48px;
+   line-height: 48px;
+   letter-spacing: -2.14286px;
+   color: #FFFFFF;
+   
+}
+
+.article__apps-wrapper {
+   display: flex;
+}
+
+.article__appstore {
+   margin-right: 18px;
+   padding: 8px 20px;
+   border-radius: 4px;
+   background-color: var(--lightgray);
+   display: flex;
+   align-items: center;
+}
+
+.article__appstore-texts {
+   margin-left: 12px;
+}
+
+.article__appstore-info {
+   font-weight: 700;
+   font-size: 10px;
+   line-height: 15px;
+   letter-spacing: -0.446429px;
+   color: var(--navy);
+}
+
+.article__appstore-name {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 24px;
+   letter-spacing: -0.892857px;
+   color: var(--navy);
+}
+
+.article__google {
+   padding-right: 20px;
+   padding-left: 20px;
+   border-radius: 4px;
+   background-color: var(--lightgray);
+   display: flex;
+   align-items: center;
+}
+
+.article__google-texts {
+   margin-left: 12px;
 }
