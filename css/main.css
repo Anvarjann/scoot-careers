@@ -111,6 +111,7 @@ a {
 }
 
 .button {
+   display: inline-block;
    font-weight: 700;
    font-size: 15px;
    line-height: 25px;
@@ -382,4 +383,139 @@ only screen and (                min-resolution: 2dppx) {
 .location__item-desc {
    font-size: 15px;
    line-height: 25px;
+}
+
+/* CAREERS START */
+
+.careers {
+   padding-bottom: 200px;
+}
+
+.careers__inner {
+
+}
+
+.careers__list {
+
+}
+
+.careers__item {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.careers__item:nth-child(2) {
+   margin-top: 160px;
+   margin-bottom: 160px;
+}
+
+.careers__item:nth-child(1) > .careers__item-img::before {
+   position: absolute;
+   bottom: 0;
+   left: calc(50% - 312px);
+   z-index: 1;
+   width: 741px;
+   height: 151px;
+   background-image: url("../images/career-woomen-before.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.careers__item:nth-child(1) > .careers__item-img::after {
+   position: absolute;
+   bottom: 0;
+   left: 509px;
+   width: 445px;
+   height: 445px;
+   background-image: url("../images/career-after-cercle.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.careers__item:nth-child(2) > .careers__item-img::before {
+   position: absolute;
+   top: 0;
+   left: calc(50% - 770px);
+   z-index: 1;
+   width: 741px;
+   height: 151px;
+   background-image: url("../images/career-city-before.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.careers__item:nth-child(2) > .careers__item-img::after {
+   position: absolute;
+   bottom: 0;
+   right: 509px;
+   width: 445px;
+   height: 445px;
+   background-image: url("../images/career-after-cercle.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.careers__item:nth-child(3) > .careers__item-img::before {
+   position: absolute;
+   top: calc(50% - 145px);
+   left: calc(50% - -25px);
+   z-index: 1;
+   width: 741px;
+   height: 151px;
+   background-image: url("../images/career-woomen-before.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.careers__item:nth-child(3) > .careers__item-img::after {
+   position: absolute;
+   bottom: 0;
+   left: 509px;
+   width: 445px;
+   height: 445px;
+   background-image: url("../images/career-after-cercle.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
+}
+
+.careers__item-info {
+   width: 445px;
+}
+
+.careers__item-title {
+   font-size: 48px;
+   line-height: 48px;
+   letter-spacing: -2.14286px;
+   color: var(--navy);
+   margin-bottom: 24px;
+}
+
+.careers__item-desc {
+   font-size: 15px;
+   line-height: 25px;
+   margin-bottom: 40px;
+}
+
+.button {
+
+}
+
+.careers__item-link {
+
+}
+
+.careers__item-img {
+   position: relative;
+   border-radius: 50%;
+}
+
+.careers__item-img > img {
+   border-radius: 50%;
 }
