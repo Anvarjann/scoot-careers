@@ -234,7 +234,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .hero__inner {
-
+   
 }
 
 .hero__text-wrapper {
@@ -311,4 +311,75 @@ only screen and (                min-resolution: 2dppx) {
 
 .hero__circle:not(:last-child) {
    margin-right: 24px;
+}
+
+/* LOCATION START */
+
+.location {
+   position: relative;
+   padding-top: 296px;
+   padding-bottom: 200px;
+}
+
+.location__inner {
+   
+}
+
+.location__line {
+   position: absolute;
+   top: calc(50% - 120px);
+   left: 0;
+   z-index: -1;
+   display: inline-block;
+   width: 973px;
+   height: 15px;
+   background-color: var(--lightgray);
+}
+
+.location__list {
+   display: flex;
+}
+
+.location__item {
+   position: relative;
+   width: 380px;
+   padding-right: 25px;
+}
+
+.location__item::before {
+   position: absolute;
+   top: -136px;
+   left: 0;
+   width: 96px;
+   height: 96px;
+   border-radius: 50%;
+   background-color: var(--yellow);
+   background-repeat: no-repeat;
+   background-position: center;
+   content: "";
+}
+
+.location__item:nth-child(1):before {
+   background-image: url("../images/location-phone.svg");
+}
+
+.location__item:nth-child(2):before {
+   background-image: url("../images/location-scooter.svg");
+}
+
+.location__item:nth-child(3):before {
+   background-image: url("../images/location-riding.svg");
+}
+
+.location__item-title {
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: -1.07143px;
+   color: var(--navy);
+   margin-bottom: 27px;
+}
+
+.location__item-desc {
+   font-size: 15px;
+   line-height: 25px;
 }
