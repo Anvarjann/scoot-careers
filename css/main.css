@@ -408,6 +408,8 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .site-about__advantages {
+   margin-bottom: -95px;
+   padding-top: 120px;
    padding-bottom: 120px;
 }
 
