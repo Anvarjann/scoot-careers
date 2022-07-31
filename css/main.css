@@ -324,7 +324,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .about-hero__inner {
-
+   
 }
 
 .about-hero__heading {
@@ -539,7 +539,7 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .values__inner {
-
+   
 }
 
 .values__heading {
@@ -607,6 +607,84 @@ only screen and (                min-resolution: 2dppx) {
    color: var(--dimgray);
 }
 
+/* SERVICES START */
+
+.services {
+   padding-bottom: 160px;
+}
+
+.services__inner {
+   
+}
+
+.services__heading {
+   font-size: 48px;
+   line-height: 48px;
+   text-align: center;
+   letter-spacing: -2.14286px;
+   color: var(--navy);
+   margin-bottom: 64px;
+}
+
+.services__top {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 64px;
+}
+
+.services__question {
+   font-size: 40px;
+   line-height: 48px;
+   letter-spacing: -1.78571px;
+   color: var(--navy);
+}
+
+.services__det-wrapper {
+   width: 730px;
+}
+
+.services__det {
+   width: 100%;
+   padding: 32px 40px;
+   background-color: var(--snow);
+
+}
+
+.services__det:nth-child(2) {
+   margin-top: 16px;
+   margin-bottom: 16px;
+}
+
+.services__det[open] > .services__sum {
+   background-image: url("../images/about-droptop.svg");
+}
+
+.services__sum {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: -1.07143px;
+   color: var(--navy);
+   font-family: "Space Mono", "Courier New", monospace;
+   list-style-type: none;
+   background-image: url("../images/about-dropdown.svg");
+   background-repeat: no-repeat;
+   background-position: right center;
+   cursor: pointer;
+}
+
+.services__text {
+   font-size: 15px;
+   line-height: 25px;
+   color: var(--navy);
+   margin-top: 24px;
+}
+
+.services__bottom {
+   display: flex;
+   justify-content: space-between;
+}
+
 /* ARTICLE START */
 
 .article {
@@ -646,27 +724,38 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .article__appstore {
-   margin-right: 18px;
-   padding: 8px 20px;
+   position: relative;
+   display: inline-block;
+   text-decoration: none;
+   color: var(--navy);
    border-radius: 4px;
    background-color: var(--lightgray);
-   display: flex;
-   align-items: center;
+   margin-right: 18px;
+   padding: 8px 16px 9px 52px;
 }
 
-.article__appstore-texts {
-   margin-left: 12px;
+.article__appstore::before {
+   position: absolute;
+   top: 14px;
+   left: 16px;
+   z-index: 1;
+   width: 25px;
+   height: 28px;
+   background-image: url("../images/apple-logo.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
 }
 
-.article__appstore-info {
+.article__apps-desc {
    font-weight: 700;
    font-size: 10px;
    line-height: 15px;
    letter-spacing: -0.446429px;
-   color: var(--navy);
+   display: block;
 }
 
-.article__appstore-name {
+.article__apps-name {
    font-weight: 700;
    font-size: 20px;
    line-height: 24px;
@@ -674,17 +763,27 @@ only screen and (                min-resolution: 2dppx) {
    color: var(--navy);
 }
 
-.article__google {
-   padding-right: 20px;
-   padding-left: 20px;
+.article__googleplay {
+   position: relative;
+   display: inline-block;
+   text-decoration: none;
+   color: var(--navy);
    border-radius: 4px;
    background-color: var(--lightgray);
-   display: flex;
-   align-items: center;
+   padding: 8px 16px 9px 52px;
 }
 
-.article__google-texts {
-   margin-left: 12px;
+.article__googleplay::before {
+   position: absolute;
+   top: 14px;
+   left: 16px;
+   z-index: 1;
+   width: 25px;
+   height: 28px;
+   background-image: url("../images/googleplay-logo.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
 }
 
 /* FOOTER START */
