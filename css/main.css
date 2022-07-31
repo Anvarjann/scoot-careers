@@ -232,6 +232,9 @@ only screen and (                min-resolution: 2dppx) {
       background-image: url("../images/hero-bg@2x.jpg");
    }
    
+   .about-hero {
+      background-image: url("../images/about-bg@2x.jpg");
+   }
 }
 
 .hero__text-wrapper {
@@ -310,6 +313,27 @@ only screen and (                min-resolution: 2dppx) {
    margin-right: 24px;
 }
 
+/* ABOUT HERO START */
+
+.about-hero {
+   margin-top: 106px;
+   padding-top: 62px;
+   padding-bottom: 82px;
+   background-image: url("../images/about-bg.jpg");
+   background-size: contain;
+}
+
+.about-hero__inner {
+   
+}
+
+.about-hero__heading {
+   font-size: 56px;
+   line-height: 56px;
+   letter-spacing: -2.5px;
+   color: #FFFFFF;
+}
+
 /* LOCATION START */
 
 .location {
@@ -377,24 +401,34 @@ only screen and (                min-resolution: 2dppx) {
    line-height: 25px;
 }
 
-/* CAREERS START */
+/* ADVANTAGESS START */
 
-.careers {
+.site-main__advantages {
    padding-bottom: 200px;
 }
 
-.careers__item {
+.site-about__advantages {
+   margin-bottom: -95px;
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+.advantages {
+   
+}
+
+.advantages__item {
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
 
-.careers__item:nth-child(2) {
+.advantages__item:nth-child(2) {
    margin-top: 160px;
    margin-bottom: 160px;
 }
 
-.careers__item:nth-child(1) > .careers__item-img::before {
+.advantages__item:nth-child(1) > .advantages__item-img::before {
    position: absolute;
    bottom: 0;
    left: calc(50% - 312px);
@@ -407,7 +441,7 @@ only screen and (                min-resolution: 2dppx) {
    content: "";
 }
 
-.careers__item:nth-child(1) > .careers__item-img::after {
+.advantages__item:nth-child(1) > .advantages__item-img::after {
    position: absolute;
    bottom: 0;
    left: 509px;
@@ -419,7 +453,7 @@ only screen and (                min-resolution: 2dppx) {
    content: "";
 }
 
-.careers__item:nth-child(2) > .careers__item-img::before {
+.advantages__item:nth-child(2) > .advantages__item-img::before {
    position: absolute;
    top: 0;
    left: calc(50% - 770px);
@@ -432,7 +466,7 @@ only screen and (                min-resolution: 2dppx) {
    content: "";
 }
 
-.careers__item:nth-child(2) > .careers__item-img::after {
+.advantages__item:nth-child(2) > .advantages__item-img::after {
    position: absolute;
    bottom: 0;
    right: 509px;
@@ -444,7 +478,7 @@ only screen and (                min-resolution: 2dppx) {
    content: "";
 }
 
-.careers__item:nth-child(3) > .careers__item-img::before {
+.advantages__item:nth-child(3) > .advantages__item-img::before {
    position: absolute;
    top: calc(50% - 145px);
    left: calc(50% - -25px);
@@ -457,7 +491,7 @@ only screen and (                min-resolution: 2dppx) {
    content: "";
 }
 
-.careers__item:nth-child(3) > .careers__item-img::after {
+.advantages__item:nth-child(3) > .advantages__item-img::after {
    position: absolute;
    bottom: 0;
    left: 509px;
@@ -469,11 +503,11 @@ only screen and (                min-resolution: 2dppx) {
    content: "";
 }
 
-.careers__item-info {
+.advantages__item-info {
    width: 445px;
 }
 
-.careers__item-title {
+.advantages__item-title {
    font-size: 48px;
    line-height: 48px;
    letter-spacing: -2.14286px;
@@ -481,19 +515,174 @@ only screen and (                min-resolution: 2dppx) {
    margin-bottom: 24px;
 }
 
-.careers__item-desc {
+.advantages__item-desc {
    font-size: 15px;
    line-height: 25px;
    margin-bottom: 40px;
 }
 
-.careers__item-img {
+.advantages__item-img {
    position: relative;
    border-radius: 50%;
 }
 
-.careers__item-img > img {
+.advantages__item-img > img {
+   width: 445px;
+   height: 445px;
    border-radius: 50%;
+}
+
+/* VALUES START */
+
+.values {
+   padding-bottom: 120px;
+}
+
+.values__inner {
+   
+}
+
+.values__heading {
+   font-size: 48px;
+   line-height: 48px;
+   text-align: center;
+   letter-spacing: -2.14286px;
+   color: var(--navy);
+   margin-bottom: 68px;
+}
+
+.values__list {
+   display: flex;
+   justify-content: space-between;
+}
+
+.values__item {
+   width: 350px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.values__item > .values__item-heading::before {
+   position: absolute;
+   top: calc(50% - 142px);
+   left: calc(50% - 50px);
+   width: 96px;
+   height: 96px;
+   background-color: var(--yellow);
+   border-radius: 50%;
+   padding-top: 34px;
+}
+
+.values__item:nth-child(1) > .values__item-heading::before {
+   content: "01";
+}
+
+.values__item:nth-child(2) > .values__item-heading::before {
+   content: "02";
+}
+
+.values__item:nth-child(3) > .values__item-heading::before {
+   content: "03";
+}
+
+.values__item-img {
+   margin-bottom: 87px;
+}
+
+.values__item-heading {
+   position: relative;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   letter-spacing: -1.07143px;
+   color: var(--navy);
+   margin-bottom: 27px;
+}
+
+.values__item-desc {
+   font-size: 15px;
+   line-height: 25px;
+   text-align: center;
+   color: var(--dimgray);
+}
+
+/* SERVICES START */
+
+.services {
+   padding-bottom: 160px;
+}
+
+.services__inner {
+   
+}
+
+.services__heading {
+   font-size: 48px;
+   line-height: 48px;
+   text-align: center;
+   letter-spacing: -2.14286px;
+   color: var(--navy);
+   margin-bottom: 64px;
+}
+
+.services__top {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 64px;
+}
+
+.services__question {
+   font-size: 40px;
+   line-height: 48px;
+   letter-spacing: -1.78571px;
+   color: var(--navy);
+}
+
+.services__det-wrapper {
+   width: 730px;
+}
+
+.services__det {
+   width: 100%;
+   padding: 32px 40px;
+   background-color: var(--snow);
+
+}
+
+.services__det:nth-child(2) {
+   margin-top: 16px;
+   margin-bottom: 16px;
+}
+
+.services__det[open] > .services__sum {
+   background-image: url("../images/about-droptop.svg");
+}
+
+.services__sum {
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 28px;
+   letter-spacing: -1.07143px;
+   color: var(--navy);
+   font-family: "Space Mono", "Courier New", monospace;
+   list-style-type: none;
+   background-image: url("../images/about-dropdown.svg");
+   background-repeat: no-repeat;
+   background-position: right center;
+   cursor: pointer;
+}
+
+.services__text {
+   font-size: 15px;
+   line-height: 25px;
+   color: var(--navy);
+   margin-top: 24px;
+}
+
+.services__bottom {
+   display: flex;
+   justify-content: space-between;
 }
 
 /* ARTICLE START */
@@ -535,27 +724,38 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .article__appstore {
-   margin-right: 18px;
-   padding: 8px 20px;
+   position: relative;
+   display: inline-block;
+   text-decoration: none;
+   color: var(--navy);
    border-radius: 4px;
    background-color: var(--lightgray);
-   display: flex;
-   align-items: center;
+   margin-right: 18px;
+   padding: 8px 16px 9px 52px;
 }
 
-.article__appstore-texts {
-   margin-left: 12px;
+.article__appstore::before {
+   position: absolute;
+   top: 14px;
+   left: 16px;
+   z-index: 1;
+   width: 25px;
+   height: 28px;
+   background-image: url("../images/apple-logo.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
 }
 
-.article__appstore-info {
+.article__apps-desc {
    font-weight: 700;
    font-size: 10px;
    line-height: 15px;
    letter-spacing: -0.446429px;
-   color: var(--navy);
+   display: block;
 }
 
-.article__appstore-name {
+.article__apps-name {
    font-weight: 700;
    font-size: 20px;
    line-height: 24px;
@@ -563,17 +763,27 @@ only screen and (                min-resolution: 2dppx) {
    color: var(--navy);
 }
 
-.article__google {
-   padding-right: 20px;
-   padding-left: 20px;
+.article__googleplay {
+   position: relative;
+   display: inline-block;
+   text-decoration: none;
+   color: var(--navy);
    border-radius: 4px;
    background-color: var(--lightgray);
-   display: flex;
-   align-items: center;
+   padding: 8px 16px 9px 52px;
 }
 
-.article__google-texts {
-   margin-left: 12px;
+.article__googleplay::before {
+   position: absolute;
+   top: 14px;
+   left: 16px;
+   z-index: 1;
+   width: 25px;
+   height: 28px;
+   background-image: url("../images/googleplay-logo.svg");
+   background-repeat: no-repeat;
+   background-size: contain;
+   content: "";
 }
 
 /* FOOTER START */
